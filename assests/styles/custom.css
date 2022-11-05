@@ -5,3 +5,25 @@
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
 }
+.data span::before{
+    content: "😍 ";
+}
+.data span{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border:  2px solid yellowgreen;
+    border-radius: 1rem;
+    background-color: aliceblue;
+    padding: 1rem 0;
+    margin: 1rem 1rem;
+
+}   
+.data span::after{
+content: url("../images/trash.png");  
+scale: 0.05;
+position: absolute;
+right: -14rem;
+cursor: pointer;
+}
