@@ -1,25 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
 }
-body{
+
+body {
     background-image: url("../images/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.data span::before{
+
+.data span::before {
     content: "😍 ";
 }
-.data span{
+
+.data span {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    border:  2px solid yellowgreen;
+    border: 2px solid yellowgreen;
     border-radius: 1rem;
     background-color: aliceblue;
     padding: 1rem 0;
