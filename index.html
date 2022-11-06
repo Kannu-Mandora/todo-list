@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,28 @@
     <link rel="stylesheet" href="assests/styles/main.css">
     <link rel="stylesheet" href="assests/styles/custom.css">
 </head>
+
 <body>
     <!--? Header -->
- <div class="flex flex-col">
-    <h1 class="flex justify-center text-5xl my-5">TODO List</h1>
-    <h2 class="flex justify-center text-4xl">Made By</h2>
-    <h2 class="flex justify-center text-4xl my-5 text-sky-400">Kannu Mandora</h2>
- </div>
- <!--? End Of Header -->
- <!-- ? Input Field And Add Data Button -->
- <div>
-    <h2 class="flex  justify-evenly">Add TODO DATA HERE:</h2>
-    <div class="flex flex-row justify-center items-center">
-        <input type="text" name="" id="" class="border-2 border-emerald-400">
-        <button type="submit" class="text-white my-5 mx-5 border border-emerald-400 bg-emerald-600 px-4 py-2 rounded-md">ADD Data</button>
+    <div class="flex flex-col">
+        <h1 class="flex justify-center text-5xl my-5">TODO List</h1>
     </div>
-    <div class="flex flex-col mx-auto bg-gray-300 border w-1/2 h-96 overflow-scroll data">
-        <span></span>
+    <!--? End Of Header -->
+    <!-- ? Input Field And Add Data Button -->
+    <div>
+        <h2 class="flex  justify-evenly">Add TODO DATA HERE:</h2>
+        <div class="flex flex-row justify-center items-center">
+            <input type="text" name="" id="enterData" class="border-2 border-emerald-400">
+            <button type="submit" class="text-white my-5 mx-5 bg-emerald-600 px-4 py-2 rounded-md">ADD
+                Data</button>
+            <button type="reset" class="text-white my-5 mx-5 bg-red-600 px-4 py-2 rounded-md" id="reset">Remove
+                All</button>
+        </div>
+
+        <div class="flex flex-col mx-auto bg-orange-200 w-1/2 h-96 overflow-scroll my-5 data rounded-lg" id="nodes"></div>
+
     </div>
- </div>
 </body>
 <script src="./assests/js/data.js"></script>
+
 </html>
