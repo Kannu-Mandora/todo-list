@@ -1,10 +1,12 @@
 function getInputData() {
+  const show = document.getElementById("msg");
   const inputData = document.getElementById("enterData").value;
   const createNode = document.getElementById("nodes");
   const spanTag = document.createElement("span");
   if (inputData === "") {
     alert("Enter Some TODO List!");
   } else {
+    show.style.display = "none";
     spanTag.textContent = inputData;
     createNode.append(spanTag);
   }
@@ -19,7 +21,7 @@ function removeInputData() {
       const parent = document.getElementById("nodes");
       parent.innerText = "";
       const inputField = document.getElementById("enterData");
-      inputField.value ="";
+      inputField.value = "";
     } else {
       return;
     }
