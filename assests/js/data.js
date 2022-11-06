@@ -18,6 +18,8 @@ function removeInputData() {
     if (ask) {
       const parent = document.getElementById("nodes");
       parent.innerText = "";
+      const inputField = document.getElementById("enterData");
+      inputField.value ="";
     } else {
       return;
     }
